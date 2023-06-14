@@ -1,7 +1,5 @@
 package BST;
 
-import javax.sql.rowset.spi.SyncResolver;
-
 public class Univalued {
     static class Node{
         int data;
