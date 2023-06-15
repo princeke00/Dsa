@@ -1,4 +1,4 @@
-package BST;
+package BT;
 
 public class InvertedBt {
     static class Node {

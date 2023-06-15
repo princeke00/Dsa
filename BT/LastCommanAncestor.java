@@ -1,4 +1,4 @@
-package BST;
+package BT;
 import java.util.*;
 
 public class LastCommanAncestor {

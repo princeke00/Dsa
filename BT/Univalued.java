@@ -1,4 +1,4 @@
-package BST;
+package BT;
 
 public class Univalued {
     static class Node{
