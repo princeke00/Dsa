@@ -2,7 +2,7 @@ package BT;
 import java.util.Queue;
 import java.util.LinkedList;
 
-public class BinarTrees {
+public class BinaryTrees {
     static class Node{
         int data; 
         Node right;
@@ -32,17 +32,14 @@ public class BinarTrees {
             return newNode;
         }
 
-        public static int preOrder(Node root){ //  root, left subtree, right subtree
+        public static void preOrder(Node root){ //  root, left subtree, right subtree
             if(root==null){
-                System.out.print(-1+" ");
-                return 0;
+                return;
             }
 
             System.out.print(root.data+" ");
             preOrder(root.left);
             preOrder(root.right);
-            
-            return 0;
         }
 
         public static void inOrder(Node root){ // left subtree, root, right subtree
@@ -100,10 +97,10 @@ public class BinarTrees {
         // BinaryTree tree = new BinaryTree();
         Node root = BinaryTree.buildTree(arr);
 
-        // BinaryTree.preorder(root);
+        // BinaryTree.preOrder(root);
         // BinaryTree.inOrder(root);
         // BinaryTree.postOrder(root);
-        BinaryTree.levelOrder(root);
+        // BinaryTree.levelOrder(root);
 
     }
 }
