@@ -1,4 +1,5 @@
 package BST;
+import java.util.*;
 
 public class BinarSearchTree {
 
@@ -31,6 +32,36 @@ public class BinarSearchTree {
         inOrder(root.right);
     }
 
+    public static void levelOrder(Node root){
+        if(root== null){
+            return;
+        }
+
+        Queue<Node> q= new LinkedList<>();
+        q.add(root);
+        q.add(null);
+
+        while(!q.isEmpty()){
+            Node curr= q.remove();
+            if(curr==null){
+                System.out.println();
+                if(q.isEmpty()){
+                    break;
+                }else{
+                    q.add(null);
+                }
+            }else{
+                System.out.print(curr.data+" ");
+                if(curr.left!=null){
+                    q.add(curr.left);
+                }
+                if(curr.right!=null){
+                    q.add(curr.right);
+                }
+            }
+        }
+    }
+
     public static boolean find(Node root, int value){
         if(root==null) return false;
         if(root.data==value){ return true;}
@@ -41,6 +72,35 @@ public class BinarSearchTree {
         }
     }
 
+    public static Node delete(Node root, int value){
+        if(root.data<value){
+            root.right=delete(root.right, value);
+        }else if(root.data>value){
+            root.left=delete(root.left, value);
+        }else{
+            if(root.left ==null && root.right==null){
+                return null;
+            }
+            if(root.right==null){
+                return root.left;
+            }else if(root.left==null){
+                return root.right;
+            }
+
+            Node inOrderS= sucessor(root.right);
+            root.data=inOrderS.data;
+            root.right=delete(root.right, inOrderS.data);
+        }
+        return root;
+    }
+
+    public static Node sucessor(Node root){
+        while(root.left!=null){
+            root=root.left;
+        }
+        return root;
+    }
+
     public static void main(String[] args) {
         int val[] = {7,5,3,9,1,10,2,6,8,4,}; //{5,1,3,4,2,7};
         Node root=null;
@@ -48,8 +108,9 @@ public class BinarSearchTree {
             root=buildBst(root, val[i]);
         }
 
-        // inOrder(root);
-        System.out.println(find(root,0));
+        levelOrder(root);
+        delete(root, 7);
+        System.out.println();
+        levelOrder(root);
     }
-
 }
