@@ -49,18 +49,18 @@ public class InvertedBt {
         node1.left.left = new Node(4);
         node1.left.right = new Node(3);
         node1.right.left = new Node(6);
-        node1.right.right = new Node(3);
+        node1.right.right = new Node(7);
 
-        // Node node2= new Node(1);
-        // node1.left= new Node(3);
-        // node1.right= new Node(2);
-        // node1.left.left= new Node(7);
-        // node1.left.right= new Node(6);
-        // node1.right.left= new Node(5);
-        // node1.right.right= new Node(4);
+        Node node2= new Node(1);
+        node1.left= new Node(3);
+        node1.right= new Node(2);
+        node1.left.left= new Node(7);
+        node1.left.right= new Node(6);
+        node1.right.left= new Node(5);
+        node1.right.right= new Node(4);
 
-        // System.out.println(isInverted(node1, node2));
-        delete(node1, 3);
-        inOrder(node1);
+        System.out.println(isInverted(node1, node2));
+        // delete(node1, 3);
+        // inOrder(node1);
     }
 }
