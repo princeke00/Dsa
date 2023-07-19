@@ -14,8 +14,6 @@ public class BinaryTrees {
             this.right=null;
         }
     }
-    
-    
 
     static class BinaryTree{
         static int index=-1;
