@@ -90,10 +90,10 @@ public class BinaryTrees {
         }
     }
     public static void main(String[] args) {
-        int arr[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+        // int arr[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
 
         // BinaryTree tree = new BinaryTree();
-        Node root = BinaryTree.buildTree(arr);
+        // Node root = BinaryTree.buildTree(arr);
 
         // BinaryTree.preOrder(root);
         // BinaryTree.inOrder(root);

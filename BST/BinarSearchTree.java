@@ -131,7 +131,7 @@ public class BinarSearchTree {
     }
 
     public static void printPath(ArrayList<Integer> path){//to print path
-        Iterator it=path.iterator();
+        Iterator<Integer> it=path.iterator();
         while(it.hasNext()){
             System.out.print(it.next()+"->");
         }
@@ -206,7 +206,7 @@ public class BinarSearchTree {
     }
 
     public static void main(String[] args) {
-        int val[] ={1,2,3,4,5,6,7,8,9}; //{8,5,3,1,4,6,10,11,14}; 
+        // int val[] ={1,2,3,4,5,6,7,8,9}; //{8,5,3,1,4,6,10,11,14}; 
         // Node root=null;
         // for(int i=0;i<val.length;i++){
         //     root=buildBst(root, val[i]);
