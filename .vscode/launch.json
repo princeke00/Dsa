@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "UnionAndIntersection",
+            "request": "launch",
+            "mainClass": "Sets.UnionAndIntersection",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "UnqueEle",
+            "request": "launch",
+            "mainClass": "Sets.UnqueEle",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "ValidAnagram",
+            "request": "launch",
+            "mainClass": "Maps.ValidAnagram",
+            "projectName": "java_7542ebea"
+        }
+    ]
+}
