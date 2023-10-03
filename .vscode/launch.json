@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Demo",
+            "request": "launch",
+            "mainClass": "Demo",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "UniquePrefix",
+            "request": "launch",
+            "mainClass": "Trie.UniquePrefix",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "StartsWith",
+            "request": "launch",
+            "mainClass": "Trie.StartsWith",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "sample",
+            "request": "launch",
+            "mainClass": "Trie.sample",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
+            "name": "ShortPrefix",
+            "request": "launch",
+            "mainClass": "Trie.ShortPrefix",
+            "projectName": "java_7542ebea"
+        },
+        {
+            "type": "java",
             "name": "Tries",
             "request": "launch",
             "mainClass": "Trie.Tries",

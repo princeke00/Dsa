@@ -15,7 +15,7 @@ public class LagestSubArrSum {
     // hence it form subarray whose sum is 0;
     // len=1st index- current index.
     private static void largestSubArr(int[] arr) {
-        HashMap<Integer,Integer> hm = new HashMap<>() ;
+        HashMap<Integer,Integer> hm = new HashMap<>();
         int sum=0, len=0;
         for(int i=0;i<arr.length;i++){
             sum+=arr[i];
