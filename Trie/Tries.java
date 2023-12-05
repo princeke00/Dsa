@@ -47,7 +47,7 @@ public class Tries {
     public static boolean wordBreak(String key){
         
         if(key.length()==0) return true;
-        // initializing varable at 1 becouse of substring function
+        // initializing variable at 1 becouse of substring function
         for(int i=1;i<=key.length();i++){
             // checking if 1st character is present in tries or not
             // then passing new key in function(recurion).
@@ -65,6 +65,6 @@ public class Tries {
             insert(arr[i]);
         }
 
-        System.out.println(wordBreak("ilikeice"));
+        System.out.println(wordBreak("alikeice"));
     }
 }

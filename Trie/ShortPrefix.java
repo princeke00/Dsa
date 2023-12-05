@@ -12,7 +12,7 @@ public class ShortPrefix {
         Node arr[]= new Node[26];
         boolean eow= false;
         int freq;
-        Node(){[]
+        Node(){
             for(int i=0;i<26;i++){
                 arr[i]= null;
             }
