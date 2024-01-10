@@ -59,7 +59,7 @@ public class BinaryTrees {
         }
 
 
-        public static void levelOrder(Node root){
+        public static void levelOrder(Node root){ // also breadth first search.
             if(root== null){
                 return;
             }
